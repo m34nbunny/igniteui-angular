@@ -1,0 +1,64 @@
+import { IgxGridActionsBaseDirective } from './grid-actions-base.directive';
+import * as i0 from "@angular/core";
+export declare class IgxGridEditingActionsComponent extends IgxGridActionsBaseDirective {
+    /**
+     * Host `class.igx-action-strip` binding.
+     *
+     * @hidden
+     * @internal
+     */
+    cssClass: string;
+    /**
+     * An input to enable/disable action strip row adding button
+     */
+    set addRow(value: boolean);
+    get addRow(): boolean;
+    /**
+     * Getter if the row is disabled
+     *
+     * @hidden
+     * @internal
+     */
+    get disabled(): boolean;
+    /**
+     * Getter if the row is root.
+     *
+     * @hidden
+     * @internal
+     */
+    get isRootRow(): boolean;
+    get hasChildren(): boolean;
+    /**
+     * An input to enable/disable action strip child row adding button
+     */
+    addChild: boolean;
+    private isMessageShown;
+    private _addRow;
+    private iconsRendered;
+    /**
+     * Enter row or cell edit mode depending the grid rowEditable option
+     *
+     * @example
+     * ```typescript
+     * this.gridEditingActions.startEdit();
+     * ```
+     */
+    startEdit(event?: any): void;
+    /**
+     * Delete a row according to the context
+     *
+     * @example
+     * ```typescript
+     * this.gridEditingActions.deleteRow();
+     * ```
+     */
+    deleteRow(event?: any): void;
+    addRowHandler(event?: any, asChild?: boolean): void;
+    /**
+     * @hidden
+     * @internal
+     */
+    private registerIcons;
+    static ɵfac: i0.ɵɵFactoryDeclaration<IgxGridEditingActionsComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<IgxGridEditingActionsComponent, "igx-grid-editing-actions", never, { "addRow": "addRow"; "addChild": "addChild"; }, {}, never, never>;
+}
